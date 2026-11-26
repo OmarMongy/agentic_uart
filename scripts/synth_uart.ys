@@ -1,0 +1,9 @@
+# Generic Yosys synthesis script for uart_top
+read_verilog -sv rtl/uart_baud_gen.sv rtl/uart_tx.sv rtl/uart_rx.sv rtl/uart_top.sv
+hierarchy -check -top uart_top
+synth -top uart_top
+abc
+opt_clean
+tee -o reports/yosys_check.txt check
+tee -o reports/yosys_stat.txt stat
+write_verilog -noattr build/uart_top_generic_synth.v

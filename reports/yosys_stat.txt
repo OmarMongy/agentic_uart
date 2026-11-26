@@ -1,0 +1,150 @@
+
+10. Printing statistics.
+
+=== $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_baud_gen ===
+
+   Number of wires:                 52
+   Number of wire bits:             91
+   Number of public wires:           7
+   Number of public wire bits:      33
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 73
+     $_ANDNOT_                       6
+     $_AND_                         22
+     $_DFFE_PN0P_                   14
+     $_DFF_PN0_                      1
+     $_NAND_                         5
+     $_NOR_                          5
+     $_ORNOT_                        2
+     $_OR_                           5
+     $_XNOR_                         7
+     $_XOR_                          6
+
+=== $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_rx ===
+
+   Number of wires:                 75
+   Number of wire bits:            110
+   Number of public wires:          14
+   Number of public wire bits:      35
+   Number of ports:                  6
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                107
+     $_ANDNOT_                      11
+     $_AND_                         34
+     $_DFFE_PN0P_                   26
+     $_DFF_PN0_                      2
+     $_DFF_PN1_                      3
+     $_MUX_                          2
+     $_NAND_                         8
+     $_NOR_                          5
+     $_NOT_                          1
+     $_ORNOT_                        4
+     $_OR_                           6
+     $_XOR_                          4
+     $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_baud_gen      1
+
+=== $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_tx ===
+
+   Number of wires:                 47
+   Number of wire bits:             74
+   Number of public wires:          12
+   Number of public wire bits:      29
+   Number of ports:                  6
+   Number of port bits:             13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 63
+     $_ANDNOT_                       6
+     $_AND_                         12
+     $_DFFE_PN0P_                   13
+     $_DFFE_PN1P_                    1
+     $_DFF_PN0_                      1
+     $_MUX_                          8
+     $_NAND_                         8
+     $_NOR_                          2
+     $_NOT_                          4
+     $_ORNOT_                        2
+     $_OR_                           5
+     $paramod$e90456f3f2a3f0eebf90b2f9e268ca63265016a0\uart_baud_gen      1
+
+=== $paramod$e90456f3f2a3f0eebf90b2f9e268ca63265016a0\uart_baud_gen ===
+
+   Number of wires:                 72
+   Number of wire bits:            111
+   Number of public wires:           7
+   Number of public wire bits:      33
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 93
+     $_ANDNOT_                       3
+     $_AND_                         24
+     $_DFFE_PN0P_                   14
+     $_DFF_PN0_                      1
+     $_NAND_                        17
+     $_NOR_                          8
+     $_NOT_                          1
+     $_ORNOT_                        5
+     $_OR_                           5
+     $_XNOR_                        13
+     $_XOR_                          2
+
+=== uart_top ===
+
+   Number of wires:                 12
+   Number of wire bits:             26
+   Number of public wires:          12
+   Number of public wire bits:      26
+   Number of ports:                 11
+   Number of port bits:             25
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $_MUX_                          1
+     $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_rx      1
+     $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_tx      1
+
+=== design hierarchy ===
+
+   uart_top                          1
+     $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_rx      1
+       $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_baud_gen      1
+     $paramod$42b028344a826ec1e12b66799b68f6b44063e340\uart_tx      1
+       $paramod$e90456f3f2a3f0eebf90b2f9e268ca63265016a0\uart_baud_gen      1
+
+   Number of wires:                258
+   Number of wire bits:            412
+   Number of public wires:          52
+   Number of public wire bits:     156
+   Number of ports:                 33
+   Number of port bits:             61
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                335
+     $_ANDNOT_                      26
+     $_AND_                         92
+     $_DFFE_PN0P_                   67
+     $_DFFE_PN1P_                    1
+     $_DFF_PN0_                      5
+     $_DFF_PN1_                      3
+     $_MUX_                         11
+     $_NAND_                        38
+     $_NOR_                         20
+     $_NOT_                          6
+     $_ORNOT_                       13
+     $_OR_                          21
+     $_XNOR_                        20
+     $_XOR_                         12
+

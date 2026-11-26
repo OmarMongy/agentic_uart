@@ -1,0 +1,6 @@
+build/
+waveforms/
+logs/
+*.vcd
+*.fst
+__pycache__/
